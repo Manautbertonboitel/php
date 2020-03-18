@@ -6,9 +6,9 @@ $DB_PASSWORD = "";
 
 try {
   $db = new PDO($DB_DSN, $DB_USER, $DB_PASSWORD);
-  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRORMODE_EXCEPTION);
-} catch (\Exception $e) {
-  echo "Echec de la connexion:" . $e->getMessage();
+  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+  echo "Echec de la connexion : " . $e->getMessage();
 }
 
 
