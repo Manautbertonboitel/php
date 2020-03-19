@@ -16,14 +16,8 @@ require "headersession.php";
         <form action="functions/login.fc.php" class="col-xl-5" method="post">
           <input  type="text" class="form-control my-3" placeholder="Nom d'utilisateur" name="uname">
           <input  type="password" class="form-control my-3" placeholder="Mot de passe" name="pwd">
-          <div class="row">
-            <div class="col">
-              <button type="submit" name="login-submit" class="btn btn-primary">Se connecter</button>
-            </div>
-            <div class="col">
-              <a href="signup.php" class="btn btn-link">S'enregistrer</a>
-            </div>
-          </div>
+          <button type="submit" name="login-submit" class="btn btn-primary">Se connecter</button>
+          <a href="signup.php" class="btn btn-link">S'enregistrer</a>
         </form>
       </div>
     </div>
