@@ -14,16 +14,11 @@
       ?>
 
       <div class="row">
-        <form action="php/signin.php" class="col-md-7">
-          <div class="form-group row align-items-center my-4">
-            <label class="col" for="exampleInputEmail1">Adresse Email</label>
-            <input class="col form-control" id="exampleInputEmail1" placeholder="Entrer votre addresse email" name="uname" required>
-          </div>
-          <div class="form-group row align-items-center">
-            <label class="col" for="exampleInputPassword1">Mot de passe</label>
-            <input type="password" class="col form-control" id="exampleInputPassword1" placeholder="Entrer votre mot de passe" name="psw" required>
-          </div>
-          <button type="submit" name="submit" value="OK" class="btn btn-primary">Se connecter</button>
+        <form action="functions/signup.fc.php" class="col-xl-5" method="post">
+          <input  type="text" class="form-control my-3" placeholder="Nom d'utilisateur" name="uname">
+          <input  type="password" class="form-control my-3" placeholder="Mot de passe" name="pwd">
+          <input  type="password" class="form-control my-3" placeholder="Répéter le mot de passe" name="pwd-repeat">
+          <button type="submit" name="signup-submit" class="btn btn-primary">Se connecter</button>
         </form>
       </div>
     </div>
