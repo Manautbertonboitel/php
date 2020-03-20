@@ -19,10 +19,10 @@ require "headersession.php";
         <div class="col">
           <?php
           if (isset($_SESSION['userId'])) {
-              echo "<p>Vous êtes connectés</p>";
+              echo "<p>Vous êtes connecté</p>";
           }
           else {
-              echo "<p>Vous êtes déconnectés</p>";
+              echo "<p>Vous êtes déconnecté</p>";
           }
            ?>
         </div>
